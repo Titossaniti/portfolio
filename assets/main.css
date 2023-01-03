@@ -1,11 +1,28 @@
+html{
+  --main :#FFFBD7;
+  --scnd:#FFF9BE;
+  --third:#E7E092;
+  --fourth:#CEC568;
+  --fifth:#a59d4b;
+  --six:#bbb256;
+}
+body{
+  background-color: var(--fourth);
+  color:var(--main);
+  font-weight: bold;
+}
+
 header div:first-of-type{
     height: 15vw;
+    background-color: var(--fifth);
+}
+main div{
+  background-color: var(--six);
 }
 
 /*Anim underline*/
 .underline {
     text-decoration: none;
-    color: black;
     position: relative;
   }
 .underline:before {
@@ -15,10 +32,10 @@ header div:first-of-type{
     left: 0;
     right: 0;
     height: 4px;
-    background: black;
+    background: var(--scnd);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.4s ease-in-out;
   }
 .underline:hover:before {
     transform: scaleX(1);
