@@ -1,23 +1,25 @@
 html{
-  --main :#FFFBD7;
-  --scnd:#FFF9BE;
-  --third:#E7E092;
-  --fourth:#CEC568;
-  --fifth:#a59d4b;
-  --six:#bbb256;
+  --main :#fff9f9;
+  --scnd:#ebe7df;
+  --third:#91887d;
+  --fourth:#C7B198;
 }
 body{
-  background-color: var(--fourth);
-  color:var(--main);
+  background-color: var(--main);
+  color:var(--third);
   font-weight: bold;
+}
+a{
+  text-decoration: none;
 }
 
 header div:first-of-type{
     height: 15vw;
-    background-color: var(--fifth);
+    background-color: var(--scnd);
 }
-main div{
-  background-color: var(--six);
+.project{
+  background-color: var(--scnd);
+  width:48% !important;
 }
 
 /*Anim underline*/
@@ -32,7 +34,7 @@ main div{
     left: 0;
     right: 0;
     height: 4px;
-    background: var(--scnd);
+    background: var(--third);
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease-in-out;
