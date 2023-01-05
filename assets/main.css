@@ -4,6 +4,9 @@ html{
   --third:#91887d;
   --fourth:#C7B198;
 }
+main a{
+  display: block;
+}
 body{
   background-color: var(--main);
   color:var(--third);
@@ -43,3 +46,51 @@ header div:first-of-type{
     transform: scaleX(1);
   }
 /****/
+
+/*Arrow on hover*/
+.arrow {
+  position: absolute;}
+.segunda{
+  margin-left: 15px;}
+.next {
+color:var(--third);}
+
+@keyframes bounceAlpha {
+0% {opacity: 1; transform: translateX(0px) scale(1);}
+25%{opacity: 0; transform:translateX(10px) scale(0.8);}
+26%{opacity: 0; transform:translateX(-10px) scale(0.8);}
+55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-delay:0.2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+
+.project:hover .arrow{
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+.project:hover .arrow.primera{
+  animation-name: bounceAlpha;
+  animation-duration:1.4s;
+  animation-delay:0.2s;
+  animation-iteration-count:infinite;
+  animation-timing-function:linear;
+}
+/**/
+.descsite{
+  text-align: justify;
+}
