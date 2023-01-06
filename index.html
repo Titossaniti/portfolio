@@ -9,28 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Mon portfolio - Tristan Erard</title>
 </head>
-<body>
+<body class="bg-pan-top">
     <nav class="container py-3">
-        <div class="row fs-4">
-                <div class="col-6 text-start">
+        <div class="row fs-3">
+                <div class="col-6 text-start slide-in-right">
                     Tristan Erard
                 </div>
-                <div class="col-6 text-end">
+                <div class="col-6 text-end slide-in-right">
                     <span class="underline">Contactez-moi !</span>
                 </div>
         </div>
     </nav>
     <header class="container mt-5">
-        <div>
+        <div class="boxshadow rounded tilt-in-fwd-tl">
             Dev front end - with dev kit
         </div>
     </header>
     <main class="container">
-        <h2 class="text-center mt-4 mb-3">Mes réalisations</h2>
+        <h2 class="realisation text-center mt-4 mb-3 display-4 fw-bold slide-in-right">Mes réalisations</h2>
         <div class="row mx-0 justify-content-between">
-                <a href="https://ma-jeuxvideotheque-tristanerard.netlify.app" target="_blank" class="project px-0 text-reset">
+                <a href="https://ma-jeuxvideotheque-tristanerard.netlify.app" target="_blank" class="project px-0 text-reset boxshadow scale-down-center rounded tilt-in-fwd-tl">
                     <div>
-                        <h2 class="display-5 ps-2">Groxi
+                        <h2 class="display-5 ps-3">Groxi
                             <span class="arrow primera next ">
                                 <i class="fa-solid fa-angle-right"></i>
                             </span>
@@ -40,15 +40,15 @@
                         </h2>
                     </div>
                     <div class="descsite fs-5 py-3 px-3">
-                        Exercice réalisé en formation afin d'apprendre à maîtriser Bootstrap et de s'assurer que la page soit responsive. Le but étant de reproduire le design de la maquette, le site ne comporte aucun lien et aucune fonctionnalité particulière.
+                        Exercice réalisé en formation afin d'apprendre à maîtriser Bootstrap et de s'assurer que la page soit responsive. Le but étant de reproduire le design de la maquette uniquement, le site ne comporte aucun lien et aucune fonctionnalité particulière.
                     </div>
                     <div class="text-end pe-4">
                         Cliquez pour visiter le site
                     </div>
                 </a>
-                <a href="https://ma-jeuxvideotheque-tristanerard.netlify.app" target="_blank" class="project px-0 text-reset">
+                <a href="https://ma-jeuxvideotheque-tristanerard.netlify.app" target="_blank" class="project px-0 text-reset boxshadow scale-down-center rounded tilt-in-fwd-br">
                     <div>
-                        <h2 class="display-5 ps-2">Ma Jeuxvidéotèque
+                        <h2 class="display-5 ps-3">Ma Jeuxvidéotèque
                             <span class="arrow primera next ">
                                 <i class="fa-solid fa-angle-right"></i>
                             </span>
@@ -58,7 +58,7 @@
                         </h2>
                     </div>
                     <div class="descsite fs-5 py-3 px-3">
-                        Projet construit avec Angular afin de maîtriser le systeme de composant. Il est codé en HTML, CSS et JavaScript. Bootstrap a été utilisé comme frameworks CSS et jQuery comme librairie JS.
+                        Projet en cours de construction avec Angular afin de maîtriser le systeme de composant. Il est codé en HTML, CSS et JavaScript. Bootstrap a été utilisé comme frameworks CSS et jQuery comme librairie JS.
                         Les jeux vidéos listés sont fournis via une API que j'alimente. 
                     </div>
                     <div class="text-end pe-4">
@@ -67,12 +67,14 @@
                 </a>
         </div>
     </main>
-    <footer class="container-fluid row">
-        <div class="col-6">
-            Copyright &copy; Tristan Erard - <span id="date"></span>
-        </div>
-        <div class="col-6 text-end">
-            En savoir plus sur ce site
+    <footer class="container pt-5">
+        <div class="row pt-4">
+            <div class="col-6">
+                Copyright &copy; Tristan Erard - <span id="date"></span>
+            </div>
+            <div class="col-6 text-end">
+                En savoir plus sur ce site
+            </div>
         </div>
     </footer>
     <script src="assets/main.js"></script>
