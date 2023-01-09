@@ -7,14 +7,20 @@ html{
 main a{
   display: block;
 }
+a,a:hover{
+  color: var(--scnd);
+}
 body{
+/*background anim*/
   -webkit-animation: color-change-4x 3.3s linear infinite alternate both;
           animation: color-change-4x 3.3s linear infinite alternate both;
+/**/
   color:var(--third);
   font-weight: bold;
 }
-nav{
+nav, nav a,nav a:hover{
   color:var(--scnd);
+  text-decoration: none;
 }
 .realisation{
   color:var(--scnd)
@@ -53,13 +59,9 @@ footer{
   }
 }
 /**/
-
-
-
 a{
   text-decoration: none;
 }
-
 header div:first-of-type{
     height: 15vw;
     background-color: var(--scnd);
@@ -72,7 +74,6 @@ header div:first-of-type{
   font-weight: bold;
     color: #818496;
 }
-
 /*Anim underline*/
 .underline {
     text-decoration: none;
@@ -94,7 +95,6 @@ header div:first-of-type{
     transform: scaleX(1);
   }
 /****/
-
 /*Arrow on hover*/
 .arrow {
   position: absolute;}
@@ -109,14 +109,12 @@ color:var(--third);}
 26%{opacity: 0; transform:translateX(-10px) scale(0.8);}
 55% {opacity: 1; transform: translateX(0px) scale(1);}
 }
-
 .bounceAlpha {
   animation-name: bounceAlpha;
   animation-duration:1.4s;
   animation-iteration-count:infinite;
   animation-timing-function:linear;
 }
-
 .arrow.primera.bounceAlpha {
   animation-name: bounceAlpha;
   animation-duration:1.4s;
@@ -142,20 +140,16 @@ color:var(--third);}
 .descsite{
   text-align: justify;
 }
-
 /*BOX SAHDOW*/
 .boxshadow{
   box-shadow: rgba(255, 255, 255, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
 /**/
-
 /*box anim*/
 .scale-down-center:hover {
 	-webkit-animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
 	        animation: scale-down-center 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
 }
-
-
  @-webkit-keyframes scale-down-center {
   0% {
     -webkit-transform: scale(1);
@@ -178,15 +172,12 @@ color:var(--third);}
             transform: scale(0.96);
   }
 }
-
 /**/
-
 /*On load anim*/
 .tilt-in-fwd-tl {
 	-webkit-animation: tilt-in-fwd-tl 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940)  both;
 	        animation: tilt-in-fwd-tl 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
+        }
  @-webkit-keyframes tilt-in-fwd-tl {
   0% {
     -webkit-transform: rotateY(-20deg) rotateX(35deg) translate(-300px, -300px) skew(35deg, -10deg);
@@ -210,12 +201,11 @@ color:var(--third);}
             transform: rotateY(0) rotateX(0deg) translate(0, 0) skew(0deg, 0deg);
     opacity: 1;
   }
-  
 }
 .tilt-in-fwd-br {
 	-webkit-animation: tilt-in-fwd-br 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: tilt-in-fwd-br 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+        }
 @-webkit-keyframes tilt-in-fwd-br {
   0% {
     -webkit-transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px) skew(35deg, -10deg);
@@ -268,6 +258,88 @@ color:var(--third);}
     opacity: 1;
   }
 }
-
-
 /**/
+/*Social network on the side*/
+#sidelink{
+  position: absolute;
+  z-index:1;
+  top: 35%;
+  width: 6vw;
+}
+#sidelink a{
+  color:white;
+  height: 4vw;
+  width: 80%;
+  transition: width 0.25s;
+}
+#sidelink a:hover{
+  width: 110%;
+}
+/**/
+input{
+  height: 3.5vw;
+}
+textarea{
+  height: 14vw;
+}
+.contact{
+  color: var(--scnd);
+}
+/* Anim contact */
+.fade-in-fwd {
+	-webkit-animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+@-webkit-keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    -webkit-transform: translateZ(-80px);
+            transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+/*forms style*/
+.formstyle{
+  padding-left: 1.5em;
+  border: none;
+  border-radius: 8px;
+}
+/**/
+.formfocus {
+  outline: none;
+  --border-size: 3px;
+  background-image: conic-gradient(from var(--border-angle), #ffffff, #ffffff), conic-gradient(from var(--border-angle), transparent 20%, #636986, #464C65);
+  background-size: calc(100% - (var(--border-size) * 2)) calc(100% - (var(--border-size) * 2)), cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation: bg-spin 3s linear infinite;
+}
+@keyframes bg-spin {
+  to {
+    --border-angle: 1turn;
+ }
+}
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+.moreinfo{
+  color: white;
+}
