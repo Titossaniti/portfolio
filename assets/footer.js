@@ -14,9 +14,10 @@ col2footer.classList.add("col-6", "text-end");
 //Condition to acces the right page depending on wich one we are
 const link = document.createElement("a");
 
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/index.html" || "tristan-erard.netlify.app/") {
     link.href = "pages/moreinfo.html";
-  } else {
+  }
+  else {
     link.href = "moreinfo.html";
   }
 

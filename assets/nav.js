@@ -28,7 +28,7 @@ row.appendChild(col2);
 //Condition to acces the right page depending on wich one we are
 const col2Link = document.createElement("a");
 
-if (window.location.pathname === "/index.html") {
+if (window.location.pathname === "/index.html" || "tristan-erard.netlify.app/") {
     col2Link.href = "pages/contact.html";
   } else {
     col2Link.href = "contact.html";
