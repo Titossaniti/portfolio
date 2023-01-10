@@ -11,11 +11,15 @@ row.appendChild(col1);
 
 //Condition to acces the right page depending on wich one we are
 const col1Link = document.createElement("a");
-if (location.pathname === '/index.html') {
-    col1Link.href = "#";
-} else {
+
+if (window.location.pathname === "/index.html") {
+    col1Link.href = "/index.html";
+  } else if (window.location.pathname === "titossaniti.github.io/portfolio/index.html") {
+    col1Link.href = "portfolio/index.html";
+  } else {
     col1Link.href = "../index.html";
-}
+  }
+
 col1Link.textContent = "Tristan Erard";
 col1.appendChild(col1Link);
 
@@ -27,10 +31,13 @@ row.appendChild(col2);
 const col2Link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
-  col2Link.href = "pages/contact.html";
-} else {
-  col2Link.href = "contact.html";
-}
+    col2Link.href = "pages/contact.html";
+  } else if (window.location.pathname === "titossaniti.github.io/portfolio/index.html") {
+    col2Link.href = "portfolio/pages/contact.html";
+  } else {
+    col2Link.href = "contact.html";
+  }
+  
 
 col2.appendChild(col2Link);
 

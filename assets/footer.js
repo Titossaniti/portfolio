@@ -18,6 +18,15 @@ if (window.location.pathname === "portfolio/index.html") {
 } else {
     link.href = "/pages/moreinfo.html";
 }
+
+if (window.location.pathname === "/index.html") {
+    link.href = "/moreinfo.html";
+  } else if (window.location.pathname === "titossaniti.github.io/portfolio/index.html") {
+    link.href = "portfolio/moreinfo.html";
+  } else {
+    link.href = "../index.html";
+  }
+
 link.classList.add("underline");
 link.innerText = "En savoir plus sur ce site";
 col2footer.appendChild(link);
