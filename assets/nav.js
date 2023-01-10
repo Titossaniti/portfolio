@@ -29,10 +29,10 @@ row.appendChild(col2);
 const col2Link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
-    col2Link.href = "pages/contact.html";
+    col2Link.href = "./pages/contact.html";
   } 
   else {
-    col2Link.href = "contact.html";
+    col2Link.href = "./contact.html";
   }
 
 col2.appendChild(col2Link);
