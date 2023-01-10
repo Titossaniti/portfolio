@@ -26,14 +26,9 @@ col2.classList.add("col-6", "text-end", "slide-in-right");
 row.appendChild(col2);
 
 //Condition to acces the right page depending on wich one we are
+const basePath = '/';
 const col2Link = document.createElement("a");
-
-if (window.location.pathname === "/index.html") {
-    col2Link.href = "./pages/contact.html";
-  } 
-  else {
-    col2Link.href = "./contact.html";
-  }
+col2Link.href = basePath + "pages/contact.html";
 
 col2.appendChild(col2Link);
 

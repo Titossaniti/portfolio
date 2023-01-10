@@ -13,13 +13,7 @@ col2footer.classList.add("col-6", "text-end");
 
 //Condition to acces the right page depending on wich one we are
 const link = document.createElement("a");
-
-if (window.location.pathname === "/index.html") {
-    link.href = "pages/moreinfo.html";
-  }
-  else {
-    link.href = "moreinfo.html";
-  }
+link.href = basePath + "pages/moreinfo.html";
 
 link.classList.add("underline");
 link.innerText = "En savoir plus sur ce site";
