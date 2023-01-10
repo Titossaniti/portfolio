@@ -346,3 +346,7 @@ textarea{
 footer{
   margin-bottom: 2vw;
 }
+.project img{
+  float: left;
+  height: 5vw;
+}
