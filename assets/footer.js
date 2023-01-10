@@ -13,18 +13,13 @@ col2footer.classList.add("col-6", "text-end");
 
 //Condition to acces the right page depending on wich one we are
 const link = document.createElement("a");
-if (window.location.pathname === "portfolio/index.html") {
-    link.href = "/moreinfo.html";
-} else {
-    link.href = "/pages/moreinfo.html";
-}
 
 if (window.location.pathname === "/index.html") {
     link.href = "/moreinfo.html";
   } else if (window.location.pathname === "titossaniti.github.io/portfolio/index.html") {
-    link.href = "portfolio/moreinfo.html";
+    link.href = "portfolio/pages/moreinfo.html";
   } else {
-    link.href = "../index.html";
+    link.href = "../moreinfo.html";
   }
 
 link.classList.add("underline");
