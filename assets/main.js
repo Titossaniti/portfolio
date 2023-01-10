@@ -18,4 +18,9 @@ $('input , textarea').focusin(function(){
 $('input , textarea').focusout(function(){
     $(this).removeClass('formfocus')
 });
-  });
+//Alert on form submit successfull
+$('form').submit(function(){
+    alert('Votre message a bien été envoyé !')
+});
+
+});

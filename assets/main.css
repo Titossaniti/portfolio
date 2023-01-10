@@ -83,10 +83,10 @@ header div:first-of-type{
     content: "";
     position: absolute;
     bottom: -2px;
-    left: 0;
+    left: 0; 
     right: 0;
-    height: 4px;
-    background: var(--scnd);
+    height: 4px; 
+    background: var(--scnd); 
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.4s ease-in-out;
@@ -258,7 +258,6 @@ color:var(--third);}
     opacity: 1;
   }
 }
-/**/
 /*Social network on the side*/
 #sidelink{
   position: absolute;
@@ -287,8 +286,8 @@ textarea{
 }
 /* Anim contact */
 .fade-in-fwd {
-	-webkit-animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-fwd 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 @-webkit-keyframes fade-in-fwd {
   0% {
@@ -320,7 +319,7 @@ textarea{
   border: none;
   border-radius: 8px;
 }
-/**/
+/*form anim on focus*/
 .formfocus {
   outline: none;
   --border-size: 3px;
@@ -340,6 +339,10 @@ textarea{
   inherits: true;
   initial-value: 0turn;
 }
+/**/
 .moreinfo{
   color: white;
+}
+footer{
+  margin-bottom: 2vw;
 }

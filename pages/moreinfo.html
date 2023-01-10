@@ -10,21 +10,14 @@
     <title>En savoir plus sur ce site</title>
 </head>
 <body>
-    <nav class="container py-3">
-        <div class="row fs-3">
-            <div class="col-6 text-start slide-in-right">
-                <a href="../index.html">Tristan Erard</a>
-            </div>
-            <div class="col-6 text-end slide-in-right">
-                <a href="../pages/contact.html"><span class="underline">Contactez-moi !</span></a>
-            </div>
-        </div>
-    </nav>
     <main>
-        <div class="container mt-5">
+        <div class="container mt-5 fade-in-fwd">
             <div class="moreinfo border rounded p-4 my-5">
                 <p>
-                    Ce portfolio a été codé en HTML et CSS et contient un peu de JavaScript pour les animations.
+                    Ce portfolio a été codé en HTML et CSS et contient un peu de JavaScript pour les animations et les intégrations. 
+                <p>
+                    Sont intégrés en JS plusieurs éléments, de façon dynamique de sorte que les liens ne soient pas obsolètes selon la page sur laquelle on se trouve. Celà concerne la navbar (le menu tout en haut de la page pour naviguer sur le site), le footer, ainsi que les liens vers mes réseaux sociaux professionnels, qui se trouvent sur le côté gauche de la page.
+                </p>
                 </p>
                 <p>
                     Le frameworks CSS utilisé est Bootstrap. Concernant le JavaScript, jQuery a servis de bibliothèque, bien que peut utilisé.
@@ -35,20 +28,12 @@
             </div>
         </div>
     </main>
-    <footer class="container pt-5">
-        <div class="row pt-4 slide-in-right">
-            <div class="col-6">
-                Copyright &copy; Tristan Erard - <span id="date"></span>
-            </div>
-            <div class="col-6 text-end">
-                <a href="../pages/moreinfo.html" class="underline">
-                    En savoir plus sur ce site
-                </a>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
+    <script src="../assets/bootsrap/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../assets/main.js"></script>
-    <script src="../assets/bootsrap/bootstrap.bundle.min.js"></script>    
+    <script src="../assets/nav.js"></script>
+    <script src="../assets/footer.js"></script>
+    <script src="../assets/socials.js"></script>
 </body>
 </html>

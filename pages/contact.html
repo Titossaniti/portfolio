@@ -10,16 +10,6 @@
     <title>Contactez-moi</title>
 </head>
 <body>
-    <nav class="container py-3">
-        <div class="row fs-3">
-                <div class="col-6 text-start slide-in-right">
-                    <a href="../index.html">Tristan Erard</a>
-                </div>
-                <div class="col-6 text-end slide-in-right">
-                    <a href="#"><span class="underline">Contactez-moi !</span></a>
-                </div>
-        </div>
-    </nav>
     <main class="fade-in-fwd">
         <div class="container">
             <div class="my-5 fs-4 contact">
@@ -36,33 +26,23 @@
                 <input type="text" name="honeypot" style="display: none;">
 
                 <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Adresse mail" class="d-block formstyle col-12">
+                <input type="email" name="email" id="email" placeholder="Adresse mail" class="d-block formstyle col-12" required>
 
-                <textarea name="message" class="formstyle mt-4 pt-3 col-12" placeholder="Ecrivez-moi !"></textarea>
+                <textarea name="message" class="formstyle mt-4 pt-3 col-12" placeholder="Ecrivez-moi !" required></textarea>
     
                 <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Portfolio/index.html">
                 <div class="text-end">
-                    <input type="submit" value="Envoyer" class="mt-5 btn btn-light px-5 fw-bold"/>
+                    <input id="submit" type="submit" value="Envoyer" class="mt-5 btn btn-light px-5 fw-bold"/>
                 </div>
             </form>
         </div>
     </main>
-    <footer class="container pt-5">
-        <div class="row pt-4 slide-in-right">
-            <div class="col-6">
-                Copyright &copy; Tristan Erard - <span id="date"></span>
-            </div>
-            <div class="col-6 text-end">
-                <a href="../pages/moreinfo.html" class="underline">
-                    En savoir plus sur ce site
-                </a>
-            </div>
-        </div>
-    </footer>
-
-
+    <div id="footer"></div>
+    <script src="../assets/bootsrap/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../assets/main.js"></script>
-    <script src="../assets/bootsrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/nav.js"></script>
+    <script src="../assets/footer.js"></script>
+    <script src="../assets/socials.js"></script>
 </body>
 </html>
