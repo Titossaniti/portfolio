@@ -30,7 +30,7 @@ const col2Link = document.createElement("a");
 
 if (window.location.pathname === "/index.html" || "tristan-erard.netlify.app/") {
     col2Link.href = "pages/contact.html";
-  } else if (window.location.pathname === "tristan-erard.netlify.app/pages/moreinfo.html" || "tristan-erard.netlify.app/pages/contact.html"){
+  } else if (window.location.pathname === "https://tristan-erard.netlify.app/pages/moreinfo.html" || "https://tristan-erard.netlify.app/pages/contact.html"){
     col2Link.href = "contact.html";
   } 
   else {

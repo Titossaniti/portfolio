@@ -16,7 +16,7 @@ const link = document.createElement("a");
 
 if (window.location.pathname === "/index.html" || "tristan-erard.netlify.app/") {
     link.href = "pages/moreinfo.html";
-  } else if (window.location.pathname === "tristan-erard.netlify.app/pages/moreinfo.html" || "tristan-erard.netlify.app/pages/contact.html"){
+  } else if (window.location.pathname === "https://tristan-erard.netlify.app/pages/moreinfo.html" || "https://tristan-erard.netlify.app/pages/contact.html"){
     col2Link.href = "moreinfo.html";
   }
   else {
