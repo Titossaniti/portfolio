@@ -16,7 +16,7 @@ const link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
     link.href = "/moreinfo.html";
-  } else if (window.location.pathname === "titossaniti.github.io/portfolio/index.html") {
+  } else if (window.location.pathname === "titossaniti.github.io/portfolio/") {
     link.href = "portfolio/pages/moreinfo.html";
   } else {
     link.href = "../moreinfo.html";
