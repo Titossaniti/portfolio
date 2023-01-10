@@ -15,10 +15,10 @@ col2footer.classList.add("col-6", "text-end");
 const link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
-    link.href = "./pages/moreinfo.html";
+    link.href = "pages/moreinfo.html";
   }
   else {
-    link.href = "./moreinfo.html";
+    link.href = "moreinfo.html";
   }
 
 link.classList.add("underline");

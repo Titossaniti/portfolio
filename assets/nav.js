@@ -13,7 +13,7 @@ row.appendChild(col1);
 const col1Link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
-    col1Link.href = "./index.html";
+    col1Link.href = "/index.html";
   } else {
     col1Link.href = "../index.html";
   }
@@ -32,7 +32,7 @@ if (window.location.pathname === "/index.html") {
     col2Link.href = "./pages/contact.html";
   } 
   else {
-    col2Link.href = "../contact.html";
+    col2Link.href = "./contact.html";
   }
 
 col2.appendChild(col2Link);
