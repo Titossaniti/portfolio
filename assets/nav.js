@@ -14,8 +14,6 @@ const col1Link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
     col1Link.href = "/index.html";
-  } else if (window.location.pathname === "titossaniti.github.io/portfolio/") {
-    col1Link.href = "portfolio/index.html";
   } else {
     col1Link.href = "../index.html";
   }
@@ -32,12 +30,9 @@ const col2Link = document.createElement("a");
 
 if (window.location.pathname === "/index.html") {
     col2Link.href = "pages/contact.html";
-  } else if (window.location.pathname === "titossaniti.github.io/portfolio/") {
-    col2Link.href = "portfolio/pages/contact.html";
   } else {
     col2Link.href = "contact.html";
   }
-  
 
 col2.appendChild(col2Link);
 
