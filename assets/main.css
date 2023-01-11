@@ -1,8 +1,24 @@
+@font-face {
+  font-family: 'Zekton';
+  src: url('/assets/fonts/zekton_rg.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spantaran';
+  src: url('/assets/fonts/Spantaran.ttf') format('truetype');
+}
 html{
   --main :#fff9f9;
   --scnd:#ebe7df;
   --third:#6b728ebd;
   --fourth:#C7B198;
+}
+body{
+  font-family: 'Zekton';
+}
+ul{
+  list-style-type:decimal;
+  font-weight: normal;
+  font-family: 'Spantaran';
 }
 main a{
   display: block;
@@ -28,7 +44,6 @@ nav, nav a,nav a:hover{
 footer{
   color:var(--scnd);
 }
-
 /*bg anim*/
  @-webkit-keyframes color-change-4x {
   0% {
@@ -63,7 +78,6 @@ a{
   text-decoration: none;
 }
 header div:first-of-type{
-    height: 15vw;
     background-color: var(--scnd);
 }
 .project{
@@ -343,10 +357,16 @@ textarea{
 .moreinfo{
   color: white;
 }
-footer{
-  margin-bottom: 2vw;
-}
 .project img{
-  float: left;
-  height: 5vw;
+  float:left;
+  height: 3vw;
+  width: 3vw;
+  background-color: var(--third);
+  border-radius: 10px;
+}
+header img{
+  padding: 0.25vw;
+  width: 3vw;
+  background-color: var(--third);
+  border-radius: 10px;
 }

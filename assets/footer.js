@@ -1,5 +1,5 @@
 const footer = document.createElement("footer");
-footer.classList.add("container", "pt-5", "fixed-bottom");
+footer.classList.add("container");
 
 const rowfooter = document.createElement("div");
 rowfooter.classList.add("row", "pt-4", "slide-in-right");
